@@ -1,0 +1,3 @@
+# Module hello
+# RPC service class, partial path of RPC policy file
+com.training.client.GreetingService, E1C830B96E07807D270D130A0FA5BC18.gwt.rpc

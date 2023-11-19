@@ -1,0 +1,2 @@
+serviceClass: com.training.client.GreetingService
+path: E1C830B96E07807D270D130A0FA5BC18.gwt.rpc
