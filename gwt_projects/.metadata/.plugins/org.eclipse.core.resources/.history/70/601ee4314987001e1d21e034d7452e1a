@@ -1,0 +1,24 @@
+package com.training.client;
+
+import java.io.Serializable;
+
+public class Task implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private int id;
+    private String description;
+    private boolean completed;
+
+    // Constructors, getters, setters (you may use IDE-generated methods)
+
+    public Task() {
+        // Default constructor required for serialization
+    }
+
+    public Task(String description) {
+        this.description = description;
+    }
+
+    // Additional methods if needed
+}
+

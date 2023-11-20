@@ -1,0 +1,56 @@
+package com.training.client;
+
+package com.training.hello.client;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class TaskService {
+    private List<Task> taskList = new ArrayList<>();
+    private int nextId = 1;
+
+    public List<Task> getAllTasks() {
+        return taskList;
+    }
+
+    public void addTask(Task task) {
+        task.setId(nextId++);
+        taskList.add(task);
+    }
+
+    public Task getTaskById(int taskId) {
+        for (Task task : taskList) {
+            if (task.getId() == taskId) {
+                return task;
+            }
+        }
+        return null; // Task not found
+    }
+
+    public void updateTask(Task updatedTask) {
+        for (int i = 0; i < taskList.size(); i++) {
+            Task task = taskList.get(i);
+            if (task.getId() == updatedTask.getId()) {
+                taskList.set(i, updatedTask);
+                return;
+            }
+        }
+        // Task not found, do nothing or throw an exception
+    }
+
+    public void deleteTask(int taskId) {
+        Iterator<Task> iterator = taskList.iterator();
+        while (iterator.hasNext()) {
+            Task task = iterator.next();
+            if (task.getId() == taskId) {
+                iterator.remove();
+                return;
+            }
+        }
+        // Task not found, do nothing or throw an exception
+    }
+
+    // Additional methods for more complex operations if needed
+}
+

@@ -1,0 +1,62 @@
+package com.training.client;
+
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
+import com.google.gwt.user.client.ui.*;
+
+import java.util.List;
+
+public class TodoView {
+
+    private TextBox taskInput;
+    private FlexTable taskTable;
+
+    public TodoView(VerticalPanel mainPanel) {
+        taskInput = new TextBox();
+        taskTable = new FlexTable();
+
+        Button addButton = new Button("Add");
+        addButton.addClickHandler(new ClickHandler() {
+            public void onClick(ClickEvent event) {
+                addTask();
+            }
+        });
+
+        taskInput.addKeyUpHandler(new KeyUpHandler() {
+            public void onKeyUp(KeyUpEvent event) {
+                if (event.getNativeKeyCode() == KeyCodes.KEY_ENTER) {
+                    addTask();
+                }
+            }
+        });
+
+        mainPanel.add(taskInput);
+        mainPanel.add(addButton);
+        mainPanel.add(taskTable);
+    }
+
+    public void addTaskRow(TodoItem todoItem, ClickHandler deleteHandler) {
+        int row = taskTable.getRowCount();
+        taskTable.setText(row, 0, todoItem.getText());
+
+        Button deleteButton = new Button("Delete");
+        deleteButton.addClickHandler(deleteHandler);
+
+        taskTable.setWidget(row, 1, deleteButton);
+    }
+
+    public void removeTaskRow(int row) {
+        taskTable.removeRow(row);
+    }
+
+    public String getTaskInputText() {
+        return taskInput.getText().trim();
+    }
+
+    public void clearTaskInput() {
+        taskInput.setText("");
+    }
+}

@@ -1,0 +1,60 @@
+package com.training.client;
+
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.ui.VerticalPanel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TodoController {
+
+    private List<TodoItem> todoItems;
+    private TodoView todoView;
+
+    public TodoController(VerticalPanel mainPanel) {
+        todoItems = new ArrayList<>();
+        todoView = new TodoView(mainPanel);
+
+        // Initialize view with existing tasks
+        updateView();
+
+        // Attach event handlers
+        todoView.addTaskAddHandler(new ClickHandler() {
+            public void onClick(ClickEvent event) {
+                addTask();
+            }
+        });
+
+        todoView.addTaskDeleteHandler(new ClickHandler() {
+            public void onClick(ClickEvent event) {
+                deleteTask();
+            }
+        });
+    }
+
+    private void addTask() {
+        String taskText = todoView.getTaskInputText();
+        if (!taskText.isEmpty()) {
+            TodoItem todoItem = new TodoItem(taskText);
+            todoItems.add(todoItem);
+            todoView.addTaskRow(todoItem);
+            todoView.clearTaskInput();
+        }
+    }
+
+    private void deleteTask() {
+        int selectedRow = todoView.getSelectedRow();
+        if (selectedRow != -1) {
+            todoItems.remove(selectedRow);
+            todoView.removeTaskRow(selectedRow);
+        }
+    }
+
+    private void updateView() {
+        for (TodoItem todoItem : todoItems) {
+            todoView.addTaskRow(todoItem);
+        }
+    }
+}
+
