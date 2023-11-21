@@ -1,0 +1,9 @@
+package com.training.client;
+
+public class Task {
+
+	private int id;
+	private String description;
+	private boolean completed;
+	
+}

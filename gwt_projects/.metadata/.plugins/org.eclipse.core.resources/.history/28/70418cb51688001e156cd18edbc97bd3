@@ -1,0 +1,23 @@
+package com.training.client;
+
+import com.training.shared.FieldVerifier;
+import com.google.gwt.core.client.EntryPoint;
+import com.smartgwt.client.widgets.Button;
+import com.smartgwt.client.widgets.Canvas;
+import com.smartgwt.client.widgets.IButton;
+import com.smartgwt.client.widgets.events.ClickEvent;
+import com.smartgwt.client.widgets.events.ClickHandler;
+import com.smartgwt.client.widgets.form.fields.CheckboxItem;
+import com.smartgwt.client.widgets.form.fields.StaticTextItem;
+import com.smartgwt.client.widgets.layout.HLayout;
+import com.smartgwt.client.widgets.layout.VLayout;
+import com.smartgwt.client.widgets.list.ListGrid;
+import com.smartgwt.client.widgets.list.ListGridField;
+import com.smartgwt.client.widgets.form.DynamicForm;
+
+/**
+ * Entry point classes define <code>onModuleLoad()</code>.
+ */
+public class todo implements EntryPoint {
+  
+}

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.training.client.TodoView"/>
+    <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Button"/>
+    <fullyQualifiedTypeName name="com.google.gwt.event.dom.client.ClickHandler"/>
+    <fullyQualifiedTypeName name="com.sun.source.doctree.SerialDataTree"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.FlexTable"/>
+    <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.RootPanel"/>
+    <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.TextBox"/>
     <fullyQualifiedTypeName name="com.google.gwt.user.client.Window"/>
+    <fullyQualifiedTypeName name="com.training.client.Task"/>
+    <fullyQualifiedTypeName name="com.training.client.TaskService"/>
+    <fullyQualifiedTypeName name="com.google.gwt.dev.js.rhino.ObjToIntMap.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.google.gwt.user.client.ui.CheckBox"/>
 </qualifiedTypeNameHistroy>

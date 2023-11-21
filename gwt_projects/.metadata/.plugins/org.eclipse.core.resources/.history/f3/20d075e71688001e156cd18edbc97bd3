@@ -1,0 +1,107 @@
+package com.training.client;
+
+import com.training.shared.FieldVerifier;
+import com.google.gwt.core.client.EntryPoint;
+import com.smartclient.*;
+import com.smartgwt.client.widgets.Button;
+import com.smartgwt.client.widgets.Canvas;
+import com.smartgwt.client.widgets.IButton;
+import com.smartgwt.client.widgets.events.ClickEvent;
+import com.smartgwt.client.widgets.events.ClickHandler;
+import com.smartgwt.client.widgets.form.fields.CheckboxItem;
+import com.smartgwt.client.widgets.form.fields.StaticTextItem;
+import com.smartgwt.client.widgets.layout.HLayout;
+import com.smartgwt.client.widgets.layout.VLayout;
+import com.smartgwt.client.widgets.list.ListGrid;
+import com.smartgwt.client.widgets.list.ListGridField;
+import com.smartgwt.client.widgets.form.DynamicForm;
+
+/**
+ * Entry point classes define <code>onModuleLoad()</code>.
+ */
+public class todo implements EntryPoint {
+	private ListGrid taskListGrid;
+
+    public void onModuleLoad() {
+        setupUI();
+    }
+
+    private void setupUI() {
+        VLayout layout = new VLayout();
+        layout.setWidth100();
+        layout.setHeight100();
+
+        taskListGrid = createTaskListGrid();
+        layout.addMember(createTaskForm());
+        layout.addMember(taskListGrid);
+
+        Canvas canvas = new Canvas();
+        canvas.addChild(layout);
+
+        canvas.draw();
+    }
+
+    private ListGrid createTaskListGrid() {
+        ListGrid listGrid = new ListGrid();
+        listGrid.setWidth(400);
+        listGrid.setHeight(200);
+        listGrid.setCanEdit(true);
+
+        ListGridField descriptionField = new ListGridField("description", "Task Description");
+        ListGridField statusField = new ListGridField("completed", "Status");
+
+        listGrid.setFields(descriptionField, statusField);
+
+        return listGrid;
+    }
+
+    private DynamicForm createTaskForm() {
+        DynamicForm form = new DynamicForm();
+        form.setWidth(400);
+
+        StaticTextItem descriptionItem = new StaticTextItem("description", "Task Description");
+        CheckboxItem statusItem = new CheckboxItem("completed", "Status");
+
+        IButton addButton = new IButton("Add Task");
+        addButton.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent clickEvent) {
+                addTask(descriptionItem.getDisplayValue(), statusItem.getValueAsBoolean());
+            }
+        });
+
+        form.setFields(descriptionItem, statusItem, addButton);
+
+        return form;
+    }
+
+    private void addTask(String description, boolean completed) {
+        taskListGrid.addData(new Task(description, completed));
+    }
+
+    private static class Task {
+        private String description;
+        private boolean completed;
+
+        public Task(String description, boolean completed) {
+            this.description = description;
+            this.completed = completed;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public boolean isCompleted() {
+            return completed;
+        }
+
+        public void setCompleted(boolean completed) {
+            this.completed = completed;
+        }
+    }
+}

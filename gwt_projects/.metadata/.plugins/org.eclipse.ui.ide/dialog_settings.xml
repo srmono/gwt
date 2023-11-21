@@ -53,6 +53,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="I:\Training\gwt\MyTodoProject"/>
+			<item value="I:\Training\gwt\MyDemoProject"/>
 			<item value="I:\Training\gwt\reources\Hello"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

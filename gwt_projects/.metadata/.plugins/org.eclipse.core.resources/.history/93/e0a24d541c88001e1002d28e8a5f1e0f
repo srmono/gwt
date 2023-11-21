@@ -1,0 +1,32 @@
+package com.training.client.model;
+
+import com.smartclient.*;
+import com.smartgwt.client.widgets.grid.ListGridRecord;
+
+
+public class Task extends ListGridRecord {
+    public Task() {
+    }
+
+    public Task(String description, boolean completed) {
+        setDescription(description);
+        setCompleted(completed);
+    }
+
+    public String getDescription() {
+        return getAttribute("description");
+    }
+
+    public void setDescription(String description) {
+        setAttribute("description", description);
+    }
+
+    public boolean isCompleted() {
+        return getAttributeAsBoolean("completed");
+    }
+
+    public void setCompleted(boolean completed) {
+        setAttribute("completed", completed);
+    }
+}
+

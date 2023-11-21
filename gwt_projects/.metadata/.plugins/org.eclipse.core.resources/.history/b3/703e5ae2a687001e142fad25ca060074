@@ -1,0 +1,86 @@
+package com.training.client;
+
+import com.training.shared.FieldVerifier;
+import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.event.dom.client.KeyCodes;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.DialogBox;
+import com.google.gwt.user.client.ui.FlexTable;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TextBox;
+import com.google.gwt.user.client.ui.VerticalPanel;
+
+/**
+ * Entry point classes define <code>onModuleLoad()</code>.
+ */
+public class demo implements EntryPoint {
+	private TaskService taskService = new TaskService();
+	private FlexTable taskTable = new FlexTable();
+	
+
+	@Override
+	public void onModuleLoad() {
+		loadTasks();
+		setUpUI();
+	}
+	
+	private void loadTasks() {
+		
+		taskTable.setText(0, 0, "Task Description");
+		taskTable.setText(0, 1, "Status");
+		taskTable.setText(0, 2, "Actions");
+		
+		//taskTable.setStyleName("taskTableStyle");
+		
+		
+		for( Task task : taskService.getAllTasks() ) {
+			//Add task to table
+			addTaskToTable(task);
+		}
+		
+	}
+	 
+	private void setUpUI() {
+		RootPanel.get("app").add(new Label("Task TODO List"));
+		RootPanel.get("app").add(taskTable);
+		
+		TextBox taskInput = new TextBox();
+		Button addButton = new Button("Add Task");
+		
+		addButton.addClickHandler( event -> {
+			
+			String description =  taskInput.getText().trim();
+			
+			if(!description.isEmpty()) {
+				Task newTask = new Task(description);
+				taskService.addTask(newTask);
+				addTaskToTable(newTask);
+				taskInput.setText("");
+			}
+		} );
+		
+		RootPanel.get("app").add(taskInput);
+		RootPanel.get("app").add(addButton);
+	}
+	
+	private void addTaskToTable(Task task) {
+		int row = taskTable.getRowCount();
+		taskTable.setText(row, 0, task.getDescription());
+	}
+
+}
+
+
+
+
+
+

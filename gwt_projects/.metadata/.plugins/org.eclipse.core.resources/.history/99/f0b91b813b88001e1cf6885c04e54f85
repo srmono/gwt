@@ -1,0 +1,56 @@
+package com.training.client;
+
+import java.io.Serializable;
+
+public class Task implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private int id;
+	private String description;
+	private boolean completed;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public boolean isCompleted() {
+		return completed;
+	}
+
+	public void setCompleted(boolean completed) {
+		this.completed = completed;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public Task(String description) {
+		this.description = description;
+	}
+	public Task(int id, String description, boolean completed) {
+		super();
+		this.id = id;
+		this.description = description;
+		this.completed = completed;
+	}
+
+	public Task() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

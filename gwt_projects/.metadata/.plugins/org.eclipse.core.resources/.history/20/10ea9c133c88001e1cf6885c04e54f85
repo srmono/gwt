@@ -1,0 +1,22 @@
+package com.training.client;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TaskService {
+	private List<Task> taskList =  new ArrayList<>();
+	private int nextId = 1;
+	
+	//get all tasks
+	public List<Task> getAllTasks(){
+		return taskList;
+	}
+	
+	//Add Task
+	public void addTask(Task task) {
+		task.setId(nextId++);
+		taskList.add(task);
+	}
+	
+	
+}
