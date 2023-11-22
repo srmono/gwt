@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/asm-5.0.4.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/asm-attrs.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-anim.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-awt-util.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-bridge.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-css.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-dom.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-ext.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-gvt.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-parser.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-script.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-svg-dom.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-util.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/batik-xml.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/cglib-2.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-beanutils-1.0.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-cli-1.4.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-codec-1.15.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-collections4-4.4.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-digester-1.0.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-discovery-0.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-fileupload-1.4.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-io-2.8.0.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/httpcore-4.4.14.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/httpclient-4.5.13.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-lang3-3.11.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-validator-1.0.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/core-renderer.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/groovy-3.0.7-indy.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/groovy-jsr223-3.0.7-indy.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/groovy-servlet-3.0.7-indy.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/groovy-sql-3.0.7-indy.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/groovy-xml-3.0.7-indy.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/hibernate-validator-4.1.0.Final.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/hibernate3.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/hsqldb-2.5.1.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_assembly.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_compression.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_contentexport.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.smartclient.com/smartgwtee/server/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_core_rpc.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.smartclient.com/smartgwtee/server/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_hibernate.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_jpa.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_js_parser.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_spring.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.smartclient.com/smartgwtee/server/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_sql.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.smartclient.com/smartgwtee/server/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_tools.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.smartclient.com/smartgwtee/server/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/isomorphic_web_services.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/iText-2.0.8.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/jaxb-api-2.2.8.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/javassist-3.18.2-GA.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/joda-time-2.10.8.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/jta-1.1.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/jtidy-r938.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/aopalliance.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/poi-4.1.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/poi-ooxml-4.1.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/poi-ooxml-schemas-4.1.2.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-compress-1.21.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/slf4j-log4j12-1.7.30.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/smartgwt-skins.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/smartgwt.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/smartgwtee.jar"/>
+
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-aop-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-context-support-4.3.9.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-jdbc-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-web-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-webmvc-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-beans-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-core-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-orm-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-context-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-expression-4.3.26.RELEASE.jar"/>
+    <classpathentry kind="var" path="SGWTEE_HOME/lib/spring-tx-4.3.26.RELEASE.jar"/>
+
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/velocity-1.7.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="var" path="SGWTEE_HOME/lib/xml-apis-ext.jar"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
